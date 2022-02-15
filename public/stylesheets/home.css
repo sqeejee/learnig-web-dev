@@ -1,0 +1,154 @@
+body {
+  height: 500vh;
+  background: linear-gradient(
+    to right,
+    #bfdbf7 0%,
+    #bfdbf7 20%,
+    #e1e5f2 0%,
+    #e1e5f2 40%,
+    #ffffff 00%,
+    #ffffff 60%,
+    #dda15e 0%,
+    #dda15e 80%,
+    #bc6c25 0%,
+    #bc6c25 100%
+    
+    );
+    justify-content: center;
+}
+
+#bg{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100vw;
+  max-height: 100vh;
+  z-index: 3;
+}
+
+#card {
+  min-width: 20%;
+  min-height: 100%;
+  background-color: white;
+  z-index: -3;
+  position: fixed;
+}
+
+#first{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: larger;
+  margin-top: 150vh;
+  height: 99vh;
+  width: 100vw;
+  z-index: 3;
+  justify-content: center;
+  background: url(https://res.cloudinary.com/dqajh039o/image/upload/v1643500609/uqf4mtlhvrf0rwxnu3ap.png);
+  background-repeat: no-repeat;
+  background-size: 30vw 55vh;
+  background-position: 60vw;
+  outline: 1px solid red;
+  margin-bottom: 100px;
+}
+
+
+section {
+  margin-top: 300vh;
+  grid-column: 2 / 8;
+  background: var(--dark-bg);
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing);
+  outline: 1px solid red;
+  height: 90vh;
+}
+
+
+
+#text{
+  font-size: 300%;
+  font-weight: bold;
+  margin-left: 4vw;
+  text-align: left;
+  margin-top: 35vh;
+}
+
+#sub-text{
+  text-align: center;
+  margin-left: 5vw;
+  text-align: left;
+  font-size: 90%;
+}
+
+#second{
+  font-family: elevon, sans-serif;
+  font-size: larger;
+  margin-top: 200vh;
+  height: 99vh;
+  width: 100vw;
+  z-index: 3;
+}
+
+#img {
+  margin-top: 40vh;
+  height: 10vh;
+  width: 10vh;
+  position: fixed;
+  z-index: 3;
+}
+
+#start-text {
+  margin-top: 88vh;
+  position: fixed;
+  z-index: 3;
+  font-size: 5vh;
+  animation: bounce .9s infinite;
+}
+
+@keyframes bounce {
+  30%{
+    transform: translateY(1vh);
+  }
+  90%{
+    transform: translateY(-.5vh);
+  }
+
+  
+}
+
+
+
+ 
+header {
+  background: var(--dark-bg);
+  grid-column: 2 / span 5;
+  font-size: 2.5rem;
+  padding: 2rem;
+  margin-bottom: var(--spacing);
+}
+  section {
+    grid-column: 2 / 8;
+    padding: 1rem;
+    background: var(--dark-bg);
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: var(--spacing);
+  }
+
+  blockquote {
+    margin: 0;
+    padding: 0;
+    grid-column: 2 / span 9;
+    margin-bottom: var(--spacing);
+  }
+
+  blockquote p {
+    color: black;
+    background-color: white;
+    font-size: 4rem;
+    display: inline;
+    line-height: 1;
+  }
+
+  .left {
+    grid-column: 6 / 12;
+  }

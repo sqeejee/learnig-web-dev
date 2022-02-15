@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/stylesheets/home.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Sam Pulaski</title>
+</head>
+
+<body class="d-flex body mb-10">
+    <div id="card">
+        <div class="card-body center">
+        </div>
+      </div>
+      <canvas id="bg"></canvas>
+      
+<img id="img" src="https://res.cloudinary.com/dqajh039o/image/upload/v1643500609/uqf4mtlhvrf0rwxnu3ap.png" alt="alt">
+<div id="start-text">&#8964;</div>
+      
+  
+<div id="first">
+  
+    <h1 id="text">THIS WEBSITE</h1>
+    <p id="sub-text">
+     A simple landing page showcasing my work
+     <br>
+     You can view my resume, basic html and css skills, and see what Sam Pulaski will create!
+     <br>
+     Current Version: 1.00
+     <br>
+     Coding time: ~5 hours
+     <br>Applications used: Node, CSS, HTML
+    </p>
+     </div>
+     
+     <section class="light">
+        <h2>👩🏽‍🚀 Projects</h2>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <h2>🏆 Accomplishments</h2>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+      </section>
+
+
+</body>
+
+<script>
+    const html = document.documentElement;
+
+    window.addEventListener('scroll', () => {
+        const scrollTop = html.scrollTop;
+        const maxScrollTop = html.scrollHeight - window.innerHeight;
+        const scrollFraction = scrollTop / maxScrollTop;
+        document.getElementById("card").style.width = (scrollFraction * 500) + 'rem';
+        document.getElementById("img").style.opacity = 100 - (scrollFraction * 500) + '%' ;
+        document.getElementById("start-text").style.opacity = 100 - (scrollFraction * 500) + '%' ;
+    });
+</script>
+</html>
